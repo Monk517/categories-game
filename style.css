@@ -1,0 +1,76 @@
+body {
+  font-family: Arial;
+  background: #2e2e2e;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 0 50px;
+  font-size: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.column-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: #8a2be2;
+  margin: 5px;
+  padding: 20px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.card.used {
+  background: #444;
+  cursor: default;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
